@@ -23,7 +23,7 @@ def rot13(word: str):
 
 def kindOf(soup: _s, word: str, i: int):
   for kind in wordkinds:
-    if soup.find_all("li", id=f"toc-{kind}"):
+    if soup.find_all("li", id=f"toc-{capitalize(kind)}"):
       return kind
   
   say(word, "is unkind", i)
