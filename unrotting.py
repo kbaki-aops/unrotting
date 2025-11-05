@@ -106,4 +106,4 @@ for i, word in enumerate(alltwains):
     say(word, f" and {jbeq} are of unlike kinds…", i)
     continue
 
-  print(f"{word} <-> {jbeq} ({kind}) 🥳")
+  print(f"{word} <-> {jbeq} ({kind}) 🥳"+80*" ")
