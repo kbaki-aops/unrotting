@@ -23,7 +23,7 @@ def rot13(word: str):
 
 def kindOf(soup: _s, word: str, i: int):
   for kind in wordkinds:
-    if soup.find_all("li", id=f"toc-{capitalize(kind)}"):
+    if soup.find_all("li", id=f"toc-{kind.capitalize()}"):
       return kind
   
   say(word, "is unkind", i)
@@ -103,7 +103,7 @@ for i, word in enumerate(alltwains):
 
   xvaq = kindOf(rat, jbeq, i)
   if kind != xvaq:
-    say(f"{word} and {jbeq} are of unlike kinds…")
+    say(word, f" and {jbeq} are of unlike kinds…", i)
     continue
 
   print(f"{word} <-> {jbeq} ({kind}) 🥳")
