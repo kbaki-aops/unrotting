@@ -103,7 +103,7 @@ for i, word in enumerate(alltwains):
 
   xvaq = kindOf(rat, jbeq, i)
   if kind != xvaq:
-    say(word, f" and {jbeq} are of unlike kinds…", i)
+    say(word, f"and {jbeq} are of unlike kinds…", i)
     continue
 
   print(f"{word} <-> {jbeq} ({kind}) 🥳"+80*" ")
