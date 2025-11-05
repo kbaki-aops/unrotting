@@ -52,6 +52,7 @@ wordkinds = [
 utline: int = os.get_terminal_size().columns
 utheight: int = height("wiktionary-hoard")
 
+# https://dumps.wikimedia.org/enwiktionary/latest/enwiktionary-latest-all-titles-in-ns0.gz
 with open("wiktionary-hoard") as lines:
   for i, line in enumerate(lines):
     word = line.strip()
